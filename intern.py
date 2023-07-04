@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from pymongo import MongoClient
 
 app = Flask(__name__)
-# mongo_url='mongodb+srv://AJAYKUMAR:AJAY2001@blogging.zwdh3ol.mongodb.net/?retryWrites=true&w=majority'
+
 mongo_url='mongodb+srv://AJAYKUMAR:AJAY2001@blogging.zwdh3ol.mongodb.net/?retryWrites=true&w=majority'
 
 
@@ -14,7 +14,6 @@ client = MongoClient(mongo_url)
 db = client[DB_NAME]
 collection = db[COLLECTION_NAME]
 
-# # Send a ping to confirm a successful connection
 
 
 
